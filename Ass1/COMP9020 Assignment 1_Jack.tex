@@ -1,0 +1,98 @@
+%Name: Template of COMP9020 Assignments
+%Author:Jack
+%Date: 14/08/2017
+%Acknowledgement: This template is based on work of Brendan Trinh of UNSW MathSoc 2015
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{amsmath} % Improves structure of typed out maths
+\usepackage{mathtools} % Improves upon deficiencies of amsmath package
+\usepackage{amssymb} % Adds some handy symbols to use.
+\usepackage{amsthm} % Adds some neat formulas to use, e.g. \begin{proof} etc.
+
+\usepackage[a4paper]{geometry} % Default page margins can be altered.
+\usepackage{microtype} % Improves spacing between letters.
+\usepackage{booktabs} % Improves tables. Can now create without vertical separators.
+\usepackage{array} % Includes more options for arrays
+\usepackage{paralist} % More flexible use of itemize, enumerate, etc.
+\usepackage{graphicx} % Add images to your document
+\usepackage{color} % Allows for the use of colours!
+\usepackage{cleveref} % Better cross-referencing
+\usepackage{hyperref} % For adding hyperlinks
+\usepackage{fancyhdr} % Customise headers & footers in document
+\usepackage{paralist}
+
+\usepackage{url} % For adding url
+
+\begin{document}
+\title{COMP9020 - Assignment 1}
+\author{Jack(z5129432)}
+\date{ 14ed August 2017 }
+\maketitle
+
+% \section*{Set notation}
+% \begin{enumerate}[(a)]
+% 	$$ \O $$
+% 	$$ \in $$
+% 	$$ \notin $$
+% 	$$ \subset $$
+% 	$$ \cup $$
+% 	$$ \cap $$
+% 	$$ \setminus $$
+% 	$$ \oplus $$
+% 	$$  $$
+% \end{enumerate}
+
+\section*{Question 1}
+\begin{enumerate}[(a)]
+	\item
+	we have $$gcd(288, 120) = gcd(120, 48) = (48, 24) = (24, 24)$$
+	so $$gcd(288, 120) = 24$$
+	\item
+	we know that $$lcm(-91, 52) = lcm(91, 52)$$
+	first calculate $$gcd(91, 52) = gcd(39, 52) = gcd(13, 39) = gcd(13, 13) = 13$$
+	according to \cite{lcm} $$gcd(91, 52) \times lcm(91, 52) = 91 \times 52 = 4732$$ 
+	we can know that $$lcm(-91, 52) = \frac{4732}{gcd(91, 52)} = \frac{4732}{13} = 364$$
+	\item
+	$$ \because n + 1 > n \, for \, n \in N $$
+	according to Euclid's algorithm \cite{euclid}
+	$$gcd(n +1, n) = gcd (n + 1 - n, n) = gcd(n, 1)$$
+	$\therefore$ n and n+1 are relative prime, for $ n \in N$
+\end{enumerate}
+
+\section*{Question 2}
+\begin{enumerate}[(a)]
+	\item 
+	$$ \because \, Pow(\emptyset) = \emptyset $$
+	$$ \therefore \, Pow(Pow(\emptyset)) = \emptyset$$
+	$$ Card( \emptyset) = 0 $$
+
+	\item
+
+\end{enumerate}
+
+\section*{Question 3}
+\begin{enumerate}[(a)]
+	\item solution to q1.a)
+	\item solution to q1.b)
+\end{enumerate}
+
+\section*{Question 4}
+\begin{enumerate}[(a)]
+	\item solution to q1.a)
+	\item solution to q1.b)
+\end{enumerate}
+
+\section*{Question 5}
+\begin{enumerate}[(a)]
+	\item solution to q1.a)
+	\item solution to q1.b)
+\end{enumerate}
+
+\begin{thebibliography}{99}
+\bibitem{lcm}
+\url{https://en.wikipedia.org/wiki/Least_common_multiple#Fundamental_theorem_of_arithmetic} 
+\bibitem{euclid}
+\url{https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid.27s_algorithm}
+\end{thebibliography}
+
+\end{document}
