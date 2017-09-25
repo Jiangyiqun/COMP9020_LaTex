@@ -68,8 +68,68 @@
 
 
     \item
+\end{enumerate}
+
+\section*{Question 3}
+\begin{enumerate}[(a)]
+    \item
+    (R):
+    $$ x \lor x = x \implies x \sqsubseteq x \,  for\, all\, x \in S $$
+    (AS):
+    $$ x \sqsubseteq y \implies x \lor y = y $$
+    $$ y \sqsubseteq x \implies y \lor x = x $$
+    $$ \because x \lor y =y \lor x$$
+    $$ \therefore x =y $$
+    (T):
+    $$ x \sqsubseteq y \implies x \lor y = y $$
+    $$ y \sqsubseteq z \implies y \lor z = z $$
+    $$ x \lor z = x \lor (y \lor z) = (x \ lor y) \lor z = y \lor z = z $$
+    $$ \therefore x \sqsubseteq z $$
+    (L): not satisfied
+    $$ for x, y are\, not\, empty,\, if\, x \lor y = \emptyset\, then$$
+    $$ neither\,x \sqsubseteq y\, nor\, y \sqsubseteq x $$
+    \item
+    $\sqsubseteq is corresponse to \subseteq $
+    $$ x \subseteq y \iff x \cup y = y $$
+    \item
+    Draw a trueth table:\\
+    \begin{tabular}{ | c | c | c | c |}
+        \hline
+        x & y & $x \lor y$ & $ (x \lor y ) \rightleftarrows y$\\
+        \hline
+        T & T & T & T\\
+        \hline
+        T & F & T & F\\
+        \hline
+        F & T & T & T\\
+        \hline
+        F & F & F & T\\
+        \hline
+        \end{tabular}\\
+        Therefore, the logic equivilence is:
+        $$ xy + \bar{x}y + \overline{xy} = y + \overline{xy}$$
+\end{enumerate}
+
+\section*{Question 4}
+\begin{enumerate}[(a)]
+    \item
 
 
+    \item
+
+
+    \item
+\end{enumerate}
+
+\section*{Question 5}
+\begin{enumerate}[(a)]
+    \item
+
+
+    \item
+
+
+    \item
 \end{enumerate}
 
 
