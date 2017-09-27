@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.19)  25 SEP 2017 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.19)  27 SEP 2017 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,38 +555,48 @@ Package pdftex.def Info: Graphics/q1c1.png used on input line 52.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Graphics/q1a1.png> <./Gr
-aphics/q1b1.png>] [2 <./Graphics/q1c1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
+aphics/q1b1.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
 
-(./COMP9020 Assignment 1_Jack.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+[2 <./Graphics/q1c1.png>] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+ (./COMP9020 Assignment 1_Jack.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
 Package rerunfilecheck Info: File `"COMP9020 Assignment 1_Jack".out' has not ch
 anged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 10369 strings out of 493013
- 167457 string characters out of 6135682
- 308221 words of memory out of 5000000
- 13755 multiletter control sequences out of 15000+600000
+ 10389 strings out of 493013
+ 167805 string characters out of 6135682
+ 309221 words of memory out of 5000000
+ 13771 multiletter control sequences out of 15000+600000
  10988 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,7n,43p,332b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "COMP9020 Assignment 1_Jack.pdf" (3 pages, 104642 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msam10.pfb>
+Output written on "COMP9020 Assignment 1_Jack.pdf" (4 pages, 130037 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
  6672 words of extra memory for PDF output out of 10000 (max. 10000000)
 
