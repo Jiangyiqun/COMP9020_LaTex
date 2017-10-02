@@ -3,8 +3,8 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/z5129432/Github/COMP9020_LaTex/Ass2/COMP9020 Assignment 1_Jack.tex
-OUTPUT COMP9020 Assignment 1_Jack.log
+INPUT /home/z5129432/Github/COMP9020_LaTex/Ass2/COMP9020 Assignment 2_Jack.tex
+OUTPUT COMP9020 Assignment 2_Jack.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -99,9 +99,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT COMP9020 Assignment 1_Jack.aux
-INPUT COMP9020 Assignment 1_Jack.aux
-OUTPUT COMP9020 Assignment 1_Jack.aux
+INPUT COMP9020 Assignment 2_Jack.aux
+INPUT COMP9020 Assignment 2_Jack.aux
+OUTPUT COMP9020 Assignment 2_Jack.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -116,14 +116,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT COMP9020 Assignment 1_Jack.out
-INPUT COMP9020 Assignment 1_Jack.out
-INPUT COMP9020 Assignment 1_Jack.out
-INPUT COMP9020 Assignment 1_Jack.out
-INPUT ./COMP9020 Assignment 1_Jack.out
-INPUT ./COMP9020 Assignment 1_Jack.out
-OUTPUT COMP9020 Assignment 1_Jack.out
-OUTPUT COMP9020 Assignment 1_Jack.pdf
+INPUT COMP9020 Assignment 2_Jack.out
+INPUT COMP9020 Assignment 2_Jack.out
+INPUT COMP9020 Assignment 2_Jack.out
+INPUT COMP9020 Assignment 2_Jack.out
+INPUT ./COMP9020 Assignment 2_Jack.out
+INPUT ./COMP9020 Assignment 2_Jack.out
+OUTPUT COMP9020 Assignment 2_Jack.out
+OUTPUT COMP9020 Assignment 2_Jack.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
@@ -170,9 +170,10 @@ INPUT ./Graphics/q1c1.png
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT COMP9020 Assignment 1_Jack.aux
-INPUT ./COMP9020 Assignment 1_Jack.out
-INPUT ./COMP9020 Assignment 1_Jack.out
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT COMP9020 Assignment 2_Jack.aux
+INPUT ./COMP9020 Assignment 2_Jack.out
+INPUT ./COMP9020 Assignment 2_Jack.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -185,4 +186,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb

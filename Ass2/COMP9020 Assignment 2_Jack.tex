@@ -35,7 +35,7 @@
     \item
     For graph G = (E, V) as follows:
     \begin{center}
-        \includegraphics{q1a1}
+        \includegraphics[scale=0.7]{q1a1}
     \end{center}
     For every $e = (v, w) \in E$
     $$ c(v) \ne c(w) $$
@@ -51,10 +51,9 @@
     \begin{center}
         \includegraphics[scale=0.7]{q1c1}
     \end{center}
-    Because v2 connect to v3, so they must be different colours, $c(v2) \ne c(v3)$
-    v2 and v3 connect to all other vertex, so other vertex must use different colours other than c(v2) and c(v3)
-    $$c(v1) \ne c(v2) \ne c(v3)$$
-    also, v1 connect to v4, so $c(v1) \ne c(v4)$, at lease we should use 4 different colors
+    Look at vertex v2, v3, v6, v7, they are connected to each other.\\
+    Therefor, at least we should use 4 different colors.\\
+    $$c(v2) \ne c(v3) \ne c(v6) \ne c(v7)$$
     Because I can use 4 different colors as shows in graph, therefore:
     $$ \chi(G) = 4 $$
 \end{enumerate}
@@ -90,10 +89,10 @@
     for x, y are not empty, if x $\lor y = \emptyset $, then:\\
     neither $x \sqsubseteq y$, nor $ y \sqsubseteq x $
     \item
-    $ \sqsubseteq $ is corresponse to $ \subseteq $
+    $ \sqsubseteq $ is coresponse to $ \subseteq $
     $$ x \subseteq y \iff x \cup y = y $$
     \item
-    Draw a trueth table:\\
+    Draw a truth table:\\
     \begin{tabular}{ | c | c | c | c |}
         \hline
         x & y & $x \lor y$ & $ (x \lor y ) \rightleftarrows y$\\
@@ -146,7 +145,7 @@
     $T(2)=0$\\
     $T(n)=T(n-1)+T(n-2)+1$\\
     Where $T(n+1)$ is a fibonacci number\\
-    according to Binet's Formula$(http://mathworld.wolfram.com/BinetsFibonacciNumberFormula.html)$\\
+    according to Binet's Formula \cite{Binet}\\
     $T(n+1) = \frac{\phi^n-(-\phi^{-n})}{\sqrt{5}}$\\
     where $\phi$ is golden ratio\\
     therefore the upper bound for $rec\_a(n)$ is $\phi^n$
@@ -204,4 +203,8 @@
         return 3**n-2**n\\
     the upper bound of $calc_a(n)$ is 1, so it is more efficient
 \end{enumerate}
+\begin{thebibliography}{99}
+    \bibitem{Binet}
+    \url{http://mathworld.wolfram.com/BinetsFibonacciNumberFormula.html} 
+\end{thebibliography}
 \end{document}
