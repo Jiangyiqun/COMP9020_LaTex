@@ -160,6 +160,9 @@ INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT location.png
+INPUT ./location.png
+INPUT ./location.png
 INPUT COMP9020 Assignment 3_Jack.aux
 INPUT ./COMP9020 Assignment 3_Jack.out
 INPUT ./COMP9020 Assignment 3_Jack.out
