@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1509259149 "/home/z5129432/Github/COMP9020_LaTex/Ass3/COMP9020 Assignment 3_Jack.tex" "COMP9020 Assignment 3_Jack.pdf" "COMP9020 Assignment 3_Jack" 1509259149
+["pdflatex"] 1509261625 "/home/z5129432/Github/COMP9020_LaTex/Ass3/COMP9020 Assignment 3_Jack.tex" "COMP9020 Assignment 3_Jack.pdf" "COMP9020 Assignment 3_Jack" 1509261626
   "/etc/texmf/web2c/texmf.cnf" 1508937200 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/z5129432/Github/COMP9020_LaTex/Ass3/COMP9020 Assignment 3_Jack.tex" 1509259149 5985 93e58b165ada1af0388b03c2110ea11a ""
+  "/home/z5129432/Github/COMP9020_LaTex/Ass3/COMP9020 Assignment 3_Jack.tex" 1509261625 5981 ab1a26d67e0c394a0cd92ed8a7988937 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -97,12 +97,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1509114521 127805 5c3c5fac7370b5e0b4000550316abe76 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1508937211 718488 10b9f809102cb3808be2c63df4da6ff4 ""
-  "COMP9020 Assignment 3_Jack.aux" 1509259149 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "COMP9020 Assignment 3_Jack.out" 1509259149 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "COMP9020 Assignment 3_Jack.tex" 1509259149 5985 93e58b165ada1af0388b03c2110ea11a ""
+  "COMP9020 Assignment 3_Jack.aux" 1509261626 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "COMP9020 Assignment 3_Jack.out" 1509261626 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "COMP9020 Assignment 3_Jack.tex" 1509261625 5981 ab1a26d67e0c394a0cd92ed8a7988937 ""
   "location.png" 1508937430 15331 816bcae43d697a0d9c67bb64a1668dc4 ""
   (generated)
-  "COMP9020 Assignment 3_Jack.aux"
-  "COMP9020 Assignment 3_Jack.out"
-  "COMP9020 Assignment 3_Jack.log"
   "COMP9020 Assignment 3_Jack.pdf"
+  "COMP9020 Assignment 3_Jack.log"
+  "COMP9020 Assignment 3_Jack.out"
+  "COMP9020 Assignment 3_Jack.aux"

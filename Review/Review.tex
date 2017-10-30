@@ -32,9 +32,169 @@
 
 \section*{Topic 1: Numbers, Sets, and Alphabets}
 \begin{enumerate}
-    \item
+    \item Floor and ceiling
+        \begin{itemize}
+            \item $\lfloor \rfloor$: floor
+            \item $\lceil \rceil$: ceiling
+            \item $\lfloor -X \rfloor = - \lceil X \rceil$
+            \item $\lfloor X + t \rfloor = \lfloor X \rfloor + t$ for t $\in$ Z
+        \end{itemize}
+    \item Divisibility, prime, gcd and lcm
+        \begin{itemize}
+            \item $m \mid n$: m divides n (m is less)
+            \item $n \mid 0$ is true, and $0 \mid n$ is false, except n = 0
+            \item prime: $n > 1$ and $1 \mid n$ and $n \mid n$ only
+            \item relatively prime: $gcd(m, n) = 1$
+            \item gcd: greatest common divisor
+            \item lcm: least common multiple
+            \item gcd(m, n) * lcm(m, n) = $|m| * |n|$
+            \item Euclid's gcd algorithm: for m > n, gcd(m, n) = gcd(m-n, n)
+        \end{itemize}
+    \item Set notation and construction
+        \begin{itemize}
+            \item a set is a set of elements
+            \item Notation 1: S = \{e1, e1, e1 ... \}
+            \item Notation 2: S = \{e: description of e\}
+            \item symmetric difference 1: $A \oplus B = (A \cup B) \setminus (A \cap B)$
+            \item symmetric difference 2: $A \oplus B = (A \setminus B) \cup (B \setminus A)$
+            \item Subset: $\subseteq$, Proper subset: $\Subset$
+            \item Power set: Pow(X) = $\{A: A \subseteq X\}$
+            \item Cardinality: $|X|$
+            \item Always: $|Pow(X)| = 2^{|X|}$
+            \item Set of Numbers: P $\subset$ N $\subset$ Z $\subset$ Q $\subset$ R
+        \end{itemize}
+    \item Laws of Sets Operations
+        \begin{itemize}
+            \item Commutativity
+            \item Associativity
+            \item Distribution
+            \item Idempotence
+            \item Identity
+            \item Double Complementation
+            \item De morgan Laws: $(A \cup B))^C = A^C \cap B^C$, $(A \cap B))^C = A^C \cup B^C$
+        \end{itemize}
+    \item Cartesian product
+        \begin{itemize}
+            \item (a, b): ordered pair
+            \item $A \times B = \{(a,b) | a \in A, b \in B\}$
+        \end{itemize}
+    \item Formal language
+        \begin{itemize}
+            \item $\Sigma$: alphabet -- a finite, none empty set
+            \item $\lambda$: a empty word
+            \item $\Sigma^k$: set of all words of length k
+            \item $\Sigma^*$: set of all words
+            \item $\Sigma^+$: set of all none empty words
+        \end{itemize}
+    \end{enumerate}
 
-    \item
+\section*{Topic 2: Functions Matrix and Relations}
+    \begin{enumerate}
+        \item Function Definition
+            \begin{itemize}
+                \item notation 1: $f: S \rightarrow T$
+                \item notation 2: $f: x \mapsto y$
+                \item notation 3: f(x) = y
+                \item every input has an one and only one output
+                \item Image: Im(f) = $\{f(x), x \in Dom(f)\}$
+                \item $Im(f) \subset Codom(f)$
+                \item Composition: $g \circ f = g(f(x))$ where Im(f) $\subset$ Dom(g)
+                \item Identity: $f \circ Id = Id \circ f = f$
+            \end{itemize}
+        \item Function inverse
+            \begin{itemize}
+                \item surjective(onto): every output has a related input\\
+                    $$Im(f) = Codom(f)$$
+                \item injective(one-to-one): every input has an unique output\\
+                    $$x \ne y \implies f(x) \ne f(y)$$
+                    $$f(x) = f(y) \implies x = y$$
+                \item bijective\\
+                    $$surjective and injective$$
+                \item inverse\\
+                    $$f^{-1}: y \rightarrow x$$
+                \item $f: D \rightarrow C, S_D \subseteq D, S_C \subseteq C$, then:\\
+                    $f(S_D) \subseteq C$ is the image, and $f^{\Leftarrow}(S_C) \subseteq D$ is the inverse image\\
+                    if $f^{-1}(S_C) = f^{\Leftarrow}(S_C)$
+            \end{itemize}
+        \item Matrix
+            \begin{itemize}
+                \item $M_{mn}$ m is row and n is column
+                \[
+                    \begin{bmatrix}
+                        m_{11}  &  m_{12}  &  \dots  &  m_{1n}\\
+                        m_{21}  &  m_{22}  &  \dots  &  m_{2n}\\
+                        \dots\\
+                        m_{m1}  &  m_{m2}  &  \dots  &  m_{mn}   
+                    \end{bmatrix}
+                \]
+                \item Transpose $M^{T}$\\
+                a matrix is called symmetric if $M^T = M$
+                \item Sum
+                \item product (first row second column)
+                \[
+                    \begin{bmatrix}
+                        a_{11}  &  a_{12}   &  a_{13}\\
+                        a_{21}  &  a_{22}   &  a_{23}\\
+                    \end{bmatrix}
+                    \times
+                    \begin{bmatrix}
+                        b_{11}  &  b_{12}\\
+                        b_{21}  &  b_{22}\\
+                        b_{31}  &  b_{32}\\
+                    \end{bmatrix}            
+                    =
+                    \begin{bmatrix}
+                        a_{11}*b_{11}+a_{12}*b_{21}+a_{13}*b_{31}  &  a_{11}*b_{12}+a_{12}*b_{22}+a_{13}*b_{32}\\
+                        a_{21}*b_{21}+a_{22}*b_{21}+a_{13}*b_{31}  &  a_{21}*b_{12}+a_{22}*b_{22}+a_{23}*b_{32}\\
+                    \end{bmatrix}                       
+                \]
+            \end{itemize}
+        \item
+            \begin{itemize}
+                \item c
+            \end{itemize}
+        \end{enumerate}
+
+\section*{Topic 3: Graph theory}
+    \begin{enumerate}
+        \item
+        \item
+    \end{enumerate}
+
+\section*{Topic 4: Logic}
+    \begin{enumerate}
+        \item
+        \item
+    \end{enumerate}
+
+\section*{Topic 5: Induction}
+    \begin{enumerate}
+        \item
+        \item
+    \end{enumerate}
+
+\section*{Topic 6: Recursion}
+    \begin{enumerate}
+        \item
+        \item
+    \end{enumerate}
+
+\section*{Topic 7: Running time of programs}
+    \begin{enumerate}
+        \item
+        \item
+    \end{enumerate}
+
+\section*{Topic 8: Counting}
+    \begin{enumerate}
+        \item
+        \item
+    \end{enumerate}
+
+\section*{Topic 9: Probability and Expectation}
+    \begin{enumerate}
+        \item
+        \item
     \end{enumerate}
 
 \end{document}
