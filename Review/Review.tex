@@ -30,7 +30,7 @@
 \maketitle
 \graphicspath{{/}}
 
-\section*{Topic 1: Numbers, Sets, and Alphabets}
+\section*{Topic 1: Set}
 \begin{enumerate}
     \item Floor and ceiling
         \begin{itemize}
@@ -88,7 +88,7 @@
         \end{itemize}
     \end{enumerate}
 
-\section*{Topic 2: Functions Matrix and Relations}
+\section*{Topic 2: Function Matrix and Relation0}
     \begin{enumerate}
         \item Function Definition
             \begin{itemize}
@@ -124,7 +124,7 @@
                         m_{11}  &  m_{12}  &  \dots  &  m_{1n}\\
                         m_{21}  &  m_{22}  &  \dots  &  m_{2n}\\
                         \dots\\
-                        m_{m1}  &  m_{m2}  &  \dots  &  m_{mn}   
+                        m_{m1}  &  m_{m2}  &  \dots  &  m_{mn}
                     \end{bmatrix}
                 \]
                 \item Transpose $M^{T}$\\
@@ -141,24 +141,74 @@
                         b_{11}  &  b_{12}\\
                         b_{21}  &  b_{22}\\
                         b_{31}  &  b_{32}\\
-                    \end{bmatrix}            
+                    \end{bmatrix}
                     =
                     \begin{bmatrix}
                         a_{11}*b_{11}+a_{12}*b_{21}+a_{13}*b_{31}  &  a_{11}*b_{12}+a_{12}*b_{22}+a_{13}*b_{32}\\
                         a_{21}*b_{21}+a_{22}*b_{21}+a_{13}*b_{31}  &  a_{21}*b_{12}+a_{22}*b_{22}+a_{23}*b_{32}\\
-                    \end{bmatrix}                       
+                    \end{bmatrix}
                 \]
             \end{itemize}
-        \item
+        \item Relation Property
             \begin{itemize}
-                \item c
+                \item a relation from S to T is a subset of $R \subseteq S \times T$
+                \item x is related to y, denote xRy or R(x, y), or x,y $\in$ R, can be True or False
+                \item Reflexive: $\forall x \implies xRx$
+                \item Anti-reflexive: $\forall x \implies x\not \mathrel{R}x$
+                \item a relation can not be both reflexive and anti-reflexive
+                \item Symmetric: $\forall x,y, xRy \implies yRx$
+                \item Anti-Symmetric: $\forall x,y, xRy \land yRx \implies x = y$
+                \item a relation can be both symmetric and anti-reflexive
+                \item Transitive: $\forall x,y,z, xRy \land yRz \implies xRz$
+            \end{itemize}
+        \item Equivalence relation and Order relations
+            \begin{itemize}
+                \item Equivalence Relation: reflexive, symmetric and Transitive
+                \item Partial Order$\preceq$: reflexive, antisymmetric, transitive
+                \item lub: least upper bound, $x \in S \land x \succeq a, \forall a \in A$
+                \item glb: greatest lower bound, $x \in S \land x \preceq a, \forall a \in A$
+                \item Lattice: a poset where lub and glb exist for every pair of elements, then they exist for every finite subset
+                \item Total Order$\leq$: Partial Order, Linearity: arrange every elements in a line $\forall a,b, a \leq b \lor b \leq a$
+                \item Well order:Total Order, every subset has a least element
+                \item Lexicographic order
+                \item lenlex order
             \end{itemize}
         \end{enumerate}
 
 \section*{Topic 3: Graph theory}
     \begin{enumerate}
-        \item
-        \item
+        \item Definition: a collection of vertices and edges
+            \begin{itemize}
+                \item terminology:
+                \item incident: edge is incident to vertices
+                \item adjacent: vertex is adjacent to its neighbour vertices
+                \item isolated
+                \item types of graph:
+                \item Undirected graph: edge = \{v1, v2\}
+                \item directed graph: edge = (v1, v2)
+            \end{itemize}
+        \item Walk, trial and path
+            \begin{itemize}
+                \item walk:
+                \item from a vertex to a vertex without any restriction
+                \item close walk:
+                \item only start point and end point is the same vertex
+                \item trail:
+                \item a walk without using repeated edges
+                \item close trail:
+                \item also called a circuit
+                \item path:
+                \item a walk with no repeated vertices
+                \item close path:
+                \item a close path is called a cycle
+            \end{itemize}
+        \item Connect graph
+            \begin{itemize}
+                \item connected graph:
+                \item if there is an x-y path $\forall x,y \in V$, denote with k(G)
+                \item simple:
+                \item loop free, Undirected, no multiple edges
+            \end{itemize}
     \end{enumerate}
 
 \section*{Topic 4: Logic}
