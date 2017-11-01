@@ -22,12 +22,15 @@
 \usepackage{paralist}
 
 \usepackage{url} % For adding url
+\usepackage{multicol} % for multi column
 
+% \geometry{left=0.2cm, right=0.2cm, top=0.2cm,bottom=0.2cm}
 \begin{document}
-\title{COMP9020 - Review}
-\author{Jack Jiang (z5129432)}
-\date{ 23 October 2017 }
-\maketitle
+% \begin{multicols}{3}
+% \title{COMP9020 - Review}
+% \author{Jack Jiang (z5129432)}
+% \date{ 23 October 2017 }
+% \maketitle
 \graphicspath{{/}}
 
 \section*{Topic 1: Set}
@@ -88,7 +91,7 @@
         \end{itemize}
     \end{enumerate}
 
-\section*{Topic 2: Function Matrix and Relation0}
+\section*{Topic 2: Function Matrix and Relation}
     \begin{enumerate}
         \item Function Definition
             \begin{itemize}
@@ -186,65 +189,229 @@
                 \item types of graph:
                 \item Undirected graph: edge = \{v1, v2\}
                 \item directed graph: edge = (v1, v2)
+                \item v(G) = $|V|$, e(G) = $|E|$
             \end{itemize}
-        \item Walk, trial and path
+        \item Degree
             \begin{itemize}
-                \item walk:
-                \item from a vertex to a vertex without any restriction
-                \item close walk:
-                \item only start point and end point is the same vertex
-                \item trail:
-                \item a walk without using repeated edges
-                \item close trail:
-                \item also called a circuit
-                \item path:
-                \item a walk with no repeated vertices
-                \item close path:
-                \item a close path is called a cycle
+                \item degree: number of edges attached to the vertex
+                \item Regular graph: all degree are Equivalence
+                \item $\Sigma deg(v) = 2 \times e(G)$
+                \item the degree is always even
+                \item there is an even number of vertices of odd degree
+                \item $\Sigma outdeg(v) = \Sigma indeg(v) = e(G)$
+            \end{itemize}
+        \item path
+            \begin{itemize}
+                \item simple path(edge): $e_i \neq e_j$
+                \item close path: $v_0 = v_n$
+                \item acyclic path(vertex): $v_i \neq v_j$
+                \item cycle: acyclic path and close path
+                \item acyclic graph: graph contains no cycle
+                \item Edge traversal:
+                \item Euler path: path containing every edge exactly once
+                \item iff either it has exactly two vertices of odd degree
+                \item Euler circuit: closed Euler path
+                \item iff all deg(v) is even
+                \item Vertex traversal:
+                \item hamiltonian path: visit every vertex exactly once
+                \item hamiltonian circuit: closed hamiltonian path
             \end{itemize}
         \item Connect graph
             \begin{itemize}
                 \item connected graph:
                 \item if there is an x-y path $\forall x,y \in V$, denote with k(G)
-                \item simple:
-                \item loop free, Undirected, no multiple edges
+                \item strongly connected graph(directed):
+                \item each pair of vertices joined by a directed path in both directions
+                \item complete graph $K_n$:
+                \item every vertex connected to each other, $\frac {n(n-1)}{2}$ edges.
+                \item complete bipartitie graph $K_{m,n}$:
+                \item all vertices form difference parts are connected, vertices from the same part are disconnected.
+                \item 
+            \end{itemize}
+        \item Tree
+            \begin{itemize}
+                \item acyclic, connected
+                \item acyclic, $|V_G| = |E_G| + 1$
+                \item one simple path between any two vertices
+                \item connect, becomes disconnected if any single edge is removed
+                \item acyclic, has a cycle is any single edge is added
+            \end{itemize}
+        \item Graph Isomorphisms
+            \begin{itemize}
+                \item $ \phi: V_G \rightarrow V_H$ is bijection
+                \item $ (x,y) \in E_G$ iff $(\phi(x), \phi(y)) \in E_G$
+            \end{itemize}
+        \item Colouring, Cliques
+            \begin{itemize}
+                \item Chromatic number $\chi (G): the minimum colour$
+                \item $\chi (Tree) = 2$
+                \item $\chi (cycle with even vertices) = 2, \chi (cycle with odd vertices) = 3$
+                \item Clique number $ \kappa (G) $: the largest complete subgraph
+                \item Planar graph: without intersection
+                \item a graph is nonplanar then it must contain a subdivision of $K_5$ or $K_{3,3}$
             \end{itemize}
     \end{enumerate}
 
 \section*{Topic 4: Logic}
     \begin{enumerate}
-        \item
-        \item
+        \item proposition Logic
+            \begin{itemize}
+                \item statement: a declarative sentence that can be True or False
+                \item Well-formed formula(wff)
+                \item Connectives: $\lnot p, p \land q, p \lor q, p\implies q$ is a wff.
+                \item A implies B
+                    \begin{tabular}{|c|c|c|}
+                        \hline
+                        A & B & A $\implies$ B\\
+                        \hline
+                        F & F & T\\
+                        \hline
+                        F & T & T\\
+                        \hline
+                        T & F & F\\
+                        \hline
+                        T & T & T\\
+                        \hline
+                    \end{tabular}
+                \item A unless B: $\lnot B \implies A$
+                \item A just in case B: $A \iff B$
+                    \begin{tabular}{|c|c|c|}
+                        \hline
+                        A & B & A $\implies$ B\\
+                        \hline
+                        F & F & T\\
+                        \hline
+                        F & T & F\\
+                        \hline
+                        T & F & F\\
+                        \hline
+                        T & T & T\\
+                        \hline
+                    \end{tabular}
+                \item $A \iff B$ = $(A \implies B) \lor (B \implies A)$
+            \end{itemize}
+        \item Logic Equivalence
+            \begin{itemize}
+                \item $\phi \equiv \varphi$: have the same truth value
+                \item Excluded middle contradiction
+                \item Identity
+                \item Idempotence
+                \item Double Negation
+                \item Commutativity
+                \item Associativity
+                \item Distribution
+                \item De Morgan's Law: $ \lnot (p \land q) \equiv \lnot p \lor q$, $ \lnot (p \lor q) \equiv \lnot p \land q$
+                \item Implication
+            \end{itemize}
+        \item formula
+            \begin{itemize}
+                \item Satisfiable: it can ber true for some assignment of truth value of its basic propositions
+                \item Validity Tautology: $\models \phi$ if it is true for all propositions
+            \end{itemize}
+        \item argument
+            \begin{itemize}
+                \item Validity, Entailment: an argument is valid if conclusion is true when all premises are true
+                \item $\phi_1, \phi_2 \dots \phi_n \models \phi$
+            \end{itemize}
+        \item Theorem: $\phi \equiv \varphi$ iff $\models (\phi \iff \varphi)$
+        \item Proof Method
+            \begin{itemize}
+                \item Contrapositive: $A \implies B \iff (\lnot B \implies \lnot A)$
+                \item Contradiction: $A \iff \lnot A \implies (B \land \lnot B)$
+                \item case
+                \item substitution
+            \end{itemize}
+        \item Boolean Function
+            \begin{itemize}
+                \item             
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $\land$ & and & $.$ & conjuction\\
+                    \hline
+                    $\lor$ & or & + & disjunction\\
+                    \hline
+                    $\lnot$ & not & $\overline p$ & negation\\
+                    \hline
+                \end{tabular}
+                \item CNF: $\prod C = C_1.C_2.C_3 \dots C_n$ 
+                \item DNF(prefered): $\sum C = C_1+C_2+C_3 \dots C_n$ 
+                \item absortion: $x + xy =x$
+                \item combining the opposites: $xy + x\overline y = x$
+                \item Demorgan's law
+                \item double Negation
+                \item
+                    \includegraphics[scale = 0.5]{Kmap}
+            \end{itemize}
     \end{enumerate}
 
-\section*{Topic 5: Induction}
+\section*{Topic 5: Induction and Recursion}
     \begin{enumerate}
-        \item
-        \item
+        \item Mathematical Induction
+            \begin{itemize}
+                \item Base case: first thing is true
+                \item Incuctive Hypothesis: Assume sth is true for k, prove that k+1 is true
+                \item conclusion
+                \item Strong induction: $P(m) \land P(m+1) \land \dots \land P(k) \implies P(k+1)$
+                \item F-B induction: $P(k) \implies p(k+1)$ for some k,  $P(k) \implies p(k-1)$ for other k.
+            \end{itemize}
+        \item $\sum{n} = frac {(a_1 + a_n)n}{2}$
+        \item $\sum{n^2} = frac{n(n+1)(2n+1)}{6}$
+        \item $\prod{n} = frac {a_1(1-q^n)}{1-q}$
+        \item Recursive
+            \begin{itemize}
+                \item Basis: some initial terms are specified.
+                \item Recursive Process: later terms states as functional expressions of earlier terms.
+                \item Correctness: if the computation of any later term can be reduced to the initial values give in basis.
+            \end{itemize}
     \end{enumerate}
 
-\section*{Topic 6: Recursion}
+\section*{Topic 6: Programs Analysis}
     \begin{enumerate}
-        \item
-        \item
+        \item big O
+            \begin{itemize}
+                \item O(f): all function that are asymptotically less than f, also be called upper bound
+                \item which means that $\exists n_0$ for $n > n_0, g < f$
+                \item $\Omega(f)$: lower bound
+                \item $\Theta(f)$: tight bound
+                \item complexity in terms of input size, N
+                \item drop constants, machine-independent
+                \item worst-case
+                \item $O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(n!)$
+                \item
+                    \includegraphics[scale=0.5]{bigo}
+            \end{itemize}
+        \item Master Theorem
+            \begin{itemize}
+                \item $T(n) = d^a T(f\frac{n}{d}) + \Theta(n^b)$
+                \item $O(n^a), a>b$
+                \item $O(n^alogn), a=b$
+                \item $O(n^b), a<b$
+            \end{itemize}
     \end{enumerate}
 
-\section*{Topic 7: Running time of programs}
+\section*{Topic 7: Counting and Probability}
     \begin{enumerate}
-        \item
-        \item
+        \item Counting
+            \begin{itemize}
+                \item Union rule: for disjoint base sets $|S_1 \cup \dots \cups S_n| = \sum {|S_n|}$
+                \item Product rule: $S_1 \times \dots \times S_n = \prod {S_n}$ 
+                \item permutation: 
+                \item select r items from a size n set, without repetition, order matters
+                \item $\Pi (n,r) = \frac {n!}{(n-r)!}$
+                \item combination:
+                \item select r items from a size n set, without repetition, order doesn't matter
+                \item $n \choose k = \frac {n!}{(n-r)!r!}$
+            \end{itemize}
+        \item Probability
+            \begin{itemize}
+                \item Uniform probability distribution: each sample has a same probability in sample space $\Omega$
+                \item Event: a collection of outcomes from $\Omega$
+                \item in a uniform distribution, $P(E) = \frac {|E|}{|\Omega|}$
+                \item Two sets: $|A \cup B| = |A| + |B| - |A \cap B|$
+                \item Three sets: $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| -|A \cap C| - |B \cap C| + |A \cap B \cap C|$
+            \end{itemize}
     \end{enumerate}
 
-\section*{Topic 8: Counting}
-    \begin{enumerate}
-        \item
-        \item
-    \end{enumerate}
 
-\section*{Topic 9: Probability and Expectation}
-    \begin{enumerate}
-        \item
-        \item
-    \end{enumerate}
-
+% \end{multicols}
 \end{document}
