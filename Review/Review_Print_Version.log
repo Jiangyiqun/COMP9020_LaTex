@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  2 NOV 2017 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  2 NOV 2017 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/z5129432/Github/COMP9020_LaTex/Review/Review.tex
-(/home/z5129432/Github/COMP9020_LaTex/Review/Review.tex
+**/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex
+(/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -434,23 +434,44 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
 \mc@col@check@num=\count131
-) (./Review.aux)
-\openout1 = `Review.aux'.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+\ttl@box=\box54
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen160
+\ttl@minus=\dimen161
+\ttl@toksa=\toks30
+\titlewidth=\dimen162
+\titlewidthlast=\dimen163
+\titlewidthfirst=\dimen164
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip74
+\enit@outerparindent=\dimen165
+\enit@toks=\toks31
+\enit@inbox=\box55
+\enitdp@description=\count132
+)
+(./Review_Print_Version.aux)
+\openout1 = `Review_Print_Version.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -460,15 +481,15 @@ LaTeX Font Info:    ... okay on input line 28.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* h-part:(L,W,R)=(22.76228pt, 551.9833pt, 22.76228pt)
+* v-part:(T,H,B)=(22.76228pt, 799.52228pt, 22.76228pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=591.5302pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-7.86334pt
+* \textwidth=551.9833pt
+* \textheight=799.52228pt
+* \oddsidemargin=-49.5077pt
+* \evensidemargin=-49.5077pt
+* \topmargin=-86.5077pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -486,7 +507,7 @@ LaTeX Font Info:    ... okay on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 28.
+LaTeX Info: Redefining \microtypecontext on input line 33.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -502,17 +523,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
-\scratchdimen=\dimen160
-\scratchbox=\box54
-\nofMPsegments=\count133
-\nofMParguments=\count134
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count135
-\MPscratchDim=\dimen161
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count133
+\scratchdimen=\dimen166
+\scratchbox=\box56
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen167
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -528,8 +549,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 28.
+\AtBeginShipoutBox=\box57
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -537,24 +558,33 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count138
+\c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
-(./Review.out) (./Review.out)
+(./Review_Print_Version.out) (./Review_Print_Version.out)
 \@outlinefile=\write3
-\openout3 = `Review.out'.
+\openout3 = `Review_Print_Version.out'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
 
+/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex:39: Arithm
+etic overflow.
+<recently read> \@tempcntb 
+                           
+l.39 \graphicspath
+                  {{/}}
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -562,62 +592,42 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+[]\OT1/cmr/m/n/10.95 (+20) Anti-Symmetric: $\OMS/cmsy/m/n/10.95 8\OML/cmm/m/it/
+10.95 x; y; xRy \OMS/cmsy/m/n/10.95 ^
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-[2]
-Overfull \hbox (92.31694pt too wide) detected at line 153
-[] \OMS/cmsy/m/n/10.95 ^^B [] \OT1/cmr/m/n/10.95 = []
- []
-
-[3] [4] [5] [6] <Kmap.png, id=64, 554.07pt x 279.0425pt>
+<Kmap.png, id=33, 554.07pt x 279.0425pt>
 File: Kmap.png Graphic file (type png)
  <use Kmap.png>
-Package pdftex.def Info: Kmap.png used on input line 343.
-(pdftex.def)             Requested size: 277.03432pt x 139.5209pt.
+Package pdftex.def Info: Kmap.png used on input line 316.
+(pdftex.def)             Requested size: 166.22227pt x 83.7134pt.
 
-[7 <./Kmap.png>] <bigo.png, id=75, 809.0225pt x 504.88625pt>
-File: bigo.png Graphic file (type png)
- <use bigo.png>
-Package pdftex.def Info: bigo.png used on input line 381.
-(pdftex.def)             Requested size: 404.51027pt x 252.44249pt.
-
-Overfull \hbox (37.72168pt too wide) in paragraph at lines 381--382
+Overfull \hbox (0.27559pt too wide) in paragraph at lines 316--317
 [][] 
  []
 
-[8]
-/home/z5129432/Github/COMP9020_LaTex/Review/Review.tex:396: Undefined control s
-equence.
+/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex:364: Undef
+ined control sequence.
 <recently read> \cups 
                       
-l.396 ...disjoint base sets $|S_1 \cup \dots \cups
+l.364 ...disjoint base sets $|S_1 \cup \dots \cups
                                                    S_n| = \sum {|S_n|}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -626,30 +636,38 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 403.
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
-[9 <./bigo.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
- (./Review.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
-Package rerunfilecheck Info: File `Review.out' has not changed.
+ []
+
+/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex:410: Arith
+metic overflow.
+<recently read> \baselineskip 
+                              
+l.410 \end{multicols}
+                     
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+[2 <./Kmap.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
+ (./Review_Print_Version.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+Package rerunfilecheck Info: File `Review_Print_Version.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 442.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 10437 strings out of 494953
- 167382 string characters out of 6180976
- 309598 words of memory out of 5000000
- 13534 multiletter control sequences out of 15000+600000
- 9097 words of font info for 38 fonts, out of 8000000 for 9000
+ 10966 strings out of 494953
+ 175365 string characters out of 6180976
+ 372027 words of memory out of 5000000
+ 14047 multiletter control sequences out of 15000+600000
+ 9514 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,8n,43p,316b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+ 30i,8n,43p,330b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
@@ -658,13 +676,12 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
-.pfb>
-Output written on Review.pdf (10 pages, 207509 bytes).
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msam10.pfb>
+Output written on Review_Print_Version.pdf (2 pages, 157726 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 4107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 37 named destinations out of 1000 (max. 500000)
+ 3590 words of extra memory for PDF output out of 10000 (max. 10000000)
 

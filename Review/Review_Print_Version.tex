@@ -23,10 +23,15 @@
 
 \usepackage{url} % For adding url
 \usepackage{multicol} % for multi column
+\usepackage[tiny]{titlesec}
+\usepackage{enumitem}
+\setlist{leftmargin=2mm, topsep=0pt}
+\geometry{left=0.8cm, right=0.8cm, top=0.8cm,bottom=0.8cm}
+\linespread{0}
+\setlength{\parskip}{0\baselineskip}
 
-% \geometry{left=0.2cm, right=0.2cm, top=0.2cm,bottom=0.2cm}
 \begin{document}
-% \begin{multicols}{3}
+\begin{multicols}{3}
 % \title{COMP9020 - Review}
 % \author{Jack Jiang (z5129432)}
 % \date{ 23 October 2017 }
@@ -51,43 +56,31 @@
             \item gcd: greatest common divisor
             \item lcm: least common multiple
             \item gcd(m, n) * lcm(m, n) = $|m| * |n|$
-            \item Euclid's gcd algorithm: for m > n, gcd(m, n) = gcd(m-n, n)
+            \item Euclid's gcd algorithm: for $m > n$, gcd(m, n) = gcd(m-n, n)
         \end{itemize}
     \item Set notation and construction
         \begin{itemize}
-            \item a set is a set of elements
-            \item Notation 1: S = \{e1, e1, e1 ... \}
-            \item Notation 2: S = \{e: description of e\}
-            \item symmetric difference 1: $A \oplus B = (A \cup B) \setminus (A \cap B)$
-            \item symmetric difference 2: $A \oplus B = (A \setminus B) \cup (B \setminus A)$
+            \item symmetric difference:
+            \item $A \oplus B = (A \cup B) \setminus (A \cap B)$
+            \item $A \oplus B = (A \setminus B) \cup (B \setminus A)$
             \item Subset: $\subseteq$, Proper subset: $\Subset$
             \item Power set: Pow(X) = $\{A: A \subseteq X\}$
             \item Cardinality: $|X|$
             \item Always: $|Pow(X)| = 2^{|X|}$
             \item Set of Numbers: P $\subset$ N $\subset$ Z $\subset$ Q $\subset$ R
-        \end{itemize}
-    \item Laws of Sets Operations
-        \begin{itemize}
-            \item Commutativity
-            \item Associativity
-            \item Distribution
-            \item Idempotence
-            \item Identity
-            \item Double Complementation
-            \item De morgan Laws: $(A \cup B))^C = A^C \cap B^C$, $(A \cap B))^C = A^C \cup B^C$
-        \end{itemize}
-    \item Cartesian product
-        \begin{itemize}
-            \item (a, b): ordered pair
+            \item De morgan Laws: 
+            \item $(A \cup B))^C = A^C \cap B^C$
+            \item $(A \cap B))^C = A^C \cup B^C$
+            \item Cartesian product:
             \item $A \times B = \{(a,b) | a \in A, b \in B\}$
         \end{itemize}
     \item Formal language
         \begin{itemize}
             \item $\Sigma$: alphabet -- a finite, none empty set
             \item $\lambda$: a empty word
-            \item $\Sigma^k$: set of all words of length k
+            \item $\Sigma^k$: set of words of length k
             \item $\Sigma^*$: set of all words
-            \item $\Sigma^+$: set of all none empty words
+            \item $\Sigma^+$: set of none empty words
         \end{itemize}
     \end{enumerate}
 
@@ -95,86 +88,75 @@
     \begin{enumerate}
         \item Function Definition
             \begin{itemize}
-                \item notation 1: $f: S \rightarrow T$
-                \item notation 2: $f: x \mapsto y$
-                \item notation 3: f(x) = y
+                \item f(x)=y, $f: S \rightarrow T$, $f: x \mapsto y$
                 \item every input has an one and only one output
                 \item Image: Im(f) = $\{f(x), x \in Dom(f)\}$
-                \item $Im(f) \subset Codom(f)$
                 \item Composition: $g \circ f = g(f(x))$ where Im(f) $\subset$ Dom(g)
                 \item Identity: $f \circ Id = Id \circ f = f$
             \end{itemize}
         \item Function inverse
             \begin{itemize}
                 \item surjective(onto): every output has a related input\\
-                    $$Im(f) = Codom(f)$$
+                    $Im(f) = Codom(f)$
                 \item injective(one-to-one): every input has an unique output\\
-                    $$x \ne y \implies f(x) \ne f(y)$$
-                    $$f(x) = f(y) \implies x = y$$
-                \item bijective\\
-                    $$surjective and injective$$
-                \item inverse\\
-                    $$f^{-1}: y \rightarrow x$$
-                \item $f: D \rightarrow C, S_D \subseteq D, S_C \subseteq C$, then:\\
-                    $f(S_D) \subseteq C$ is the image, and $f^{\Leftarrow}(S_C) \subseteq D$ is the inverse image\\
-                    if $f^{-1}(S_C) = f^{\Leftarrow}(S_C)$
+                    $x \ne y \implies f(x) \ne f(y)$\\
+                    $f(x) = f(y) \implies x = y$
+                \item bijective: surjective and injective
+                \item inverse function: \\
+                    $f^{-1}: y \rightarrow x$
+                \item inverse image:\\
+                    $f^{\Leftarrow}(B) =\{s \in C: f(s) \in B\} \in C$
+                \item $f^{-1}(B) = f^{\rightarrow}(B)$
             \end{itemize}
         \item Matrix
             \begin{itemize}
-                \item $M_{mn}$ m is row and n is column
+                \item Transpose: $M^{T}$\\
+                \item symmetric: $M^T = M$
+                \item Product:
                 \[
                     \begin{bmatrix}
-                        m_{11}  &  m_{12}  &  \dots  &  m_{1n}\\
-                        m_{21}  &  m_{22}  &  \dots  &  m_{2n}\\
-                        \dots\\
-                        m_{m1}  &  m_{m2}  &  \dots  &  m_{mn}
-                    \end{bmatrix}
-                \]
-                \item Transpose $M^{T}$\\
-                a matrix is called symmetric if $M^T = M$
-                \item Sum
-                \item product (first row second column)
-                \[
-                    \begin{bmatrix}
-                        a_{11}  &  a_{12}   &  a_{13}\\
-                        a_{21}  &  a_{22}   &  a_{23}\\
+                        a_{11}  &  a_{12}\\
+                        a_{21}  &  a_{22}\\
                     \end{bmatrix}
                     \times
                     \begin{bmatrix}
                         b_{11}  &  b_{12}\\
                         b_{21}  &  b_{22}\\
-                        b_{31}  &  b_{32}\\
                     \end{bmatrix}
                     =
+                \]
+                \[
                     \begin{bmatrix}
-                        a_{11}*b_{11}+a_{12}*b_{21}+a_{13}*b_{31}  &  a_{11}*b_{12}+a_{12}*b_{22}+a_{13}*b_{32}\\
-                        a_{21}*b_{21}+a_{22}*b_{21}+a_{13}*b_{31}  &  a_{21}*b_{12}+a_{22}*b_{22}+a_{23}*b_{32}\\
+                        a_{11}b_{11}+a_{12}b_{21}  &  a_{11}b_{12}+a_{12}b_{22}\\
+                        a_{21}b_{21}+a_{22}b_{21}  &  a_{21}b_{12}+a_{22}b_{22}\\
                     \end{bmatrix}
                 \]
             \end{itemize}
-        \item Relation Property
+        \item Relation
             \begin{itemize}
-                \item a relation from S to T is a subset of $R \subseteq S \times T$
-                \item x is related to y, denote xRy or R(x, y), or x,y $\in$ R, can be True or False
+                \item a relation from S to T is a subset of $R \subseteq S \times T$, can be True or False
+                \item denote: xRy, R(x, y), x,y $\in$ R
                 \item Reflexive: $\forall x \implies xRx$
                 \item Anti-reflexive: $\forall x \implies x\not \mathrel{R}x$
-                \item a relation can not be both reflexive and anti-reflexive
                 \item Symmetric: $\forall x,y, xRy \implies yRx$
                 \item Anti-Symmetric: $\forall x,y, xRy \land yRx \implies x = y$
-                \item a relation can be both symmetric and anti-reflexive
                 \item Transitive: $\forall x,y,z, xRy \land yRz \implies xRz$
+                \item a relation CAN NOT be both reflexive and anti-reflexive
+                \item a relation CAN be both symmetric and anti-reflexive
             \end{itemize}
         \item Equivalence relation and Order relations
             \begin{itemize}
                 \item Equivalence Relation: reflexive, symmetric and Transitive
-                \item Partial Order$\preceq$: reflexive, antisymmetric, transitive
-                \item lub: least upper bound, $x \in S \land x \succeq a, \forall a \in A$
-                \item glb: greatest lower bound, $x \in S \land x \preceq a, \forall a \in A$
-                \item Lattice: a poset where lub and glb exist for every pair of elements, then they exist for every finite subset
-                \item Total Order$\leq$: Partial Order, Linearity: arrange every elements in a line $\forall a,b, a \leq b \lor b \leq a$
-                \item Well order:Total Order, every subset has a least element
-                \item Lexicographic order
-                \item lenlex order
+                \item Partial Order $\preceq$:\\
+                    reflexive, antisymmetric, transitive\\
+                    lub(least upper bound), $x \in S \land x \succeq a, \forall a \in A$\\
+                    glb(greatest lower bound), $x \in S \land x \preceq a, \forall a \in A$\\
+                    Lattice: a poset where lub and glb exist for every pair of elements, then they exist for every finite subset
+                \item Total Order $\leq$: \\
+                    a partial order with Linearity\\
+                    arrange every elements in a line $\forall a,b, a \leq b \lor b \leq a$
+                \item Well Order: \\
+                    a total order with every subset has a least element
             \end{itemize}
         \end{enumerate}
 
@@ -182,53 +164,47 @@
     \begin{enumerate}
         \item Definition: a collection of vertices and edges
             \begin{itemize}
-                \item terminology:
-                \item incident: edge is incident to vertices
-                \item adjacent: vertex is adjacent to its neighbour vertices
-                \item isolated
-                \item types of graph:
                 \item Undirected graph: edge = \{v1, v2\}
                 \item directed graph: edge = (v1, v2)
-                \item v(G) = $|V|$, e(G) = $|E|$
+                \item denote: v(G) = $|V|$, e(G) = $|E|$
             \end{itemize}
         \item Degree
             \begin{itemize}
-                \item degree: number of edges attached to the vertex
+                \item Degree: number of edges attached to the vertex
                 \item Regular graph: all degree are Equivalence
-                \item $\Sigma deg(v) = 2 \times e(G)$
-                \item the degree is always even
-                \item there is an even number of vertices of odd degree
+                \item $\Sigma deg(v) = 2 \times e(G)$\\
+                    the degree is always even\\
+                    there is an even number of vertices of odd degree
                 \item $\Sigma outdeg(v) = \Sigma indeg(v) = e(G)$
             \end{itemize}
-        \item path
+        \item Path
             \begin{itemize}
                 \item simple path(edge): $e_i \neq e_j$
                 \item close path: $v_0 = v_n$
                 \item acyclic path(vertex): $v_i \neq v_j$
                 \item cycle: acyclic path and close path
                 \item acyclic graph: graph contains no cycle
-                \item Edge traversal:
-                \item Euler path: path containing every edge exactly once
-                \item iff either it has exactly two vertices of odd degree
-                \item Euler circuit: closed Euler path
-                \item iff all deg(v) is even
-                \item Vertex traversal:
-                \item hamiltonian path: visit every vertex exactly once
-                \item hamiltonian circuit: closed hamiltonian path
+                \item Edge traversal:\\
+                    Euler path: path containing every edge exactly once\\
+                    iff either it has exactly two vertices of odd degree\\
+                    Euler circuit: closed Euler path\\
+                    iff all deg(v) is even
+                \item Vertex traversal:\\
+                    hamiltonian path: visit every vertex exactly once\\
+                    hamiltonian circuit: closed hamiltonian path
             \end{itemize}
         \item Connect graph
             \begin{itemize}
-                \item connected graph:
-                \item if there is an x-y path $\forall x,y \in V$, denote with k(G)
-                \item strongly connected graph(directed):
-                \item each pair of vertices joined by a directed path in both directions
-                \item complete graph $K_n$:
-                \item every vertex connected to each other, $\frac {n(n-1)}{2}$ edges.
-                \item complete bipartitie graph $K_{m,n}$:
-                \item all vertices form difference parts are connected, vertices from the same part are disconnected.
-                \item 
+                \item connected graph:\\
+                    if there is an x-y path $\forall x,y \in V$, denote with k(G)
+                \item strongly connected graph(directed):\\
+                    each pair of vertices joined by a directed path in both directions
+                \item complete graph $K_n$:\\
+                    every vertex connected to each other, $\frac {n(n-1)}{2}$ edges.
+                \item complete bipartitie graph $K_{m,n}$:\\
+                    all vertices form difference parts are connected, vertices from the same part are disconnected.
             \end{itemize}
-        \item Tree
+        \item Tree definitions:
             \begin{itemize}
                 \item acyclic, connected
                 \item acyclic, $|V_G| = |E_G| + 1$
@@ -241,12 +217,15 @@
                 \item $ \phi: V_G \rightarrow V_H$ is bijection
                 \item $ (x,y) \in E_G$ iff $(\phi(x), \phi(y)) \in E_G$
             \end{itemize}
-        \item Colouring, Cliques
+        \item Colouring and Cliques
             \begin{itemize}
-                \item Chromatic number $\chi (G): the minimum colour$
-                \item $\chi (Tree) = 2$
-                \item $\chi (cycle with even vertices) = 2, \chi (cycle with odd vertices) = 3$
-                \item Clique number $ \kappa (G) $: the largest complete subgraph
+                \item Chromatic number\\
+                    $\chi (G):$ the minimum colour
+                \item $\chi (Tree) = 2$\\
+                    $\chi$ (cycle with even vertices) = 2\\
+                    $\chi$ (cycle with odd vertices) = 3
+                \item Clique number\\
+                    $ \kappa (G) $: the largest complete subgraph
                 \item Planar graph: without intersection
                 \item a graph is nonplanar then it must contain a subdivision of $K_5$ or $K_{3,3}$
             \end{itemize}
@@ -259,7 +238,7 @@
                 \item statement: a declarative sentence that can be True or False
                 \item Well-formed formula(wff)
                 \item Connectives: $\lnot p, p \land q, p \lor q, p\implies q$ is a wff.
-                \item A implies B
+                \item A implies B: $A \implies B$\\
                     \begin{tabular}{|c|c|c|}
                         \hline
                         A & B & A $\implies$ B\\
@@ -274,7 +253,7 @@
                         \hline
                     \end{tabular}
                 \item A unless B: $\lnot B \implies A$
-                \item A just in case B: $A \iff B$
+                \item A just in case B: $A \iff B$\\
                     \begin{tabular}{|c|c|c|}
                         \hline
                         A & B & A $\implies$ B\\
@@ -287,21 +266,15 @@
                         \hline
                         T & T & T\\
                         \hline
-                    \end{tabular}
-                \item $A \iff B$ = $(A \implies B) \lor (B \implies A)$
+                    \end{tabular}\\
+                    $A \iff B$ = $(A \implies B) \lor (B \implies A)$
             \end{itemize}
         \item Logic Equivalence
             \begin{itemize}
                 \item $\phi \equiv \varphi$: have the same truth value
-                \item Excluded middle contradiction
-                \item Identity
-                \item Idempotence
-                \item Double Negation
-                \item Commutativity
-                \item Associativity
-                \item Distribution
-                \item De Morgan's Law: $ \lnot (p \land q) \equiv \lnot p \lor q$, $ \lnot (p \lor q) \equiv \lnot p \land q$
-                \item Implication
+                \item De Morgan's Law:\\
+                    $ \lnot (p \land q) \equiv \lnot p \lor q$\\
+                    $ \lnot (p \lor q) \equiv \lnot p \land q$
             \end{itemize}
         \item formula
             \begin{itemize}
@@ -340,7 +313,7 @@
                 \item Demorgan's law
                 \item double Negation
                 \item
-                    \includegraphics[scale = 0.5]{Kmap}
+                    \includegraphics[scale = 0.3]{Kmap}
             \end{itemize}
     \end{enumerate}
 
@@ -354,9 +327,9 @@
                 \item Strong induction: $P(m) \land P(m+1) \land \dots \land P(k) \implies P(k+1)$
                 \item F-B induction: $P(k) \implies p(k+1)$ for some k,  $P(k) \implies p(k-1)$ for other k.
             \end{itemize}
-        \item $\sum{n} = frac {(a_1 + a_n)n}{2}$
-        \item $\sum{n^2} = frac{n(n+1)(2n+1)}{6}$
-        \item $\prod{n} = frac {a_1(1-q^n)}{1-q}$
+        \item $\sum{n} = \frac {(a_1 + a_n)n}{2}$
+        \item $\sum{n^2} = \frac{n(n+1)(2n+1)}{6}$
+        \item $\prod{n} = \frac {a_1(1-q^n)}{1-q}$
         \item Recursive
             \begin{itemize}
                 \item Basis: some initial terms are specified.
@@ -367,18 +340,13 @@
 
 \section*{Topic 6: Programs Analysis}
     \begin{enumerate}
-        \item big O
+        \item Big O: complexity in terms of input size
             \begin{itemize}
-                \item O(f): all function that are asymptotically less than f, also be called upper bound
-                \item which means that $\exists n_0$ for $n > n_0, g < f$
+                \item O(f): also be called upper bound\\
+                    all function that are asymptotically less than f, which means that $\exists n_0$ for $n > n_0, g < f$
                 \item $\Omega(f)$: lower bound
                 \item $\Theta(f)$: tight bound
-                \item complexity in terms of input size, N
-                \item drop constants, machine-independent
-                \item worst-case
                 \item $O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(n!)$
-                \item
-                    \includegraphics[scale=0.5]{bigo}
             \end{itemize}
         \item Master Theorem
             \begin{itemize}
@@ -395,48 +363,49 @@
             \begin{itemize}
                 \item Union rule: for disjoint base sets $|S_1 \cup \dots \cups S_n| = \sum {|S_n|}$
                 \item Product rule: $S_1 \times \dots \times S_n = \prod {S_n}$ 
-                \item permutation: 
-                \item select r items from a size n set, without repetition, order matters
-                \item $\Pi (n,r) = \frac {n!}{(n-r)!}$
-                \item combination:
-                \item select r items from a size n set, without repetition, order doesn't matter
-                \item $n \choose k = \frac {n!}{(n-r)!r!}$
+                \item permutation:\\
+                    select r items from a size n set, without repetition, order matters
+                    $$\Pi (n,r) = \frac {n!}{(n-r)!}$$
+                \item combination:\\
+                    select r items from a size n set, without repetition, order doesn't matter
+                    $$(^{n}_{k})= \frac {n!}{(n-r)!r!}$$
+                \item k balls into n box:\\
+                    $$(^{n+k-1}_{k})$$
             \end{itemize}
         \item Probability
             \begin{itemize}
-                \item Uniform probability distribution: each sample has a same probability in sample space $\Omega$
+                \item Uniform probability distribution:\\
+                    each sample has a same probability in sample space $\Omega$\\
+                    in a uniform distribution, $P(E) = \frac {|E|}{|\Omega|}$
                 \item Event: a collection of outcomes from $\Omega$
-                \item in a uniform distribution, $P(E) = \frac {|E|}{|\Omega|}$
                 \item Two sets: $|A \cup B| = |A| + |B| - |A \cap B|$
                 \item Three sets: $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| -|A \cap C| - |B \cap C| + |A \cap B \cap C|$
             \end{itemize}
-        \item Conditional Probability
+        \item Conditional Probability and Independence
             \begin{itemize}
-                \item Conditional Probability: $P(B|A) = \frac {P(A \cap B)}{P(A)}$ for $P(A) \neq 0$
-                \item Total Probability: $P(B) = P(A \cap B) + P(\not A \cap B)$
-                \item Bayes' Theorem: $P(A|B) = \frac {P(A)P(B|A)}{P(A)P(B|A) + P(\not A)P(B| \not A)}$
-            \end{itemize}
-        \item Independent Event, Mutually exclusive
-            \begin{itemize}
-                \item A and B are independent($A \perp B$) iff:
-                \item $P(A \cap B) = P(A)P(B)$
-                \item $P(A|B) = P(A)$ for $P(A) \neq 0$
-                \item $P(B|A) = P(B)$ for $P(B) \neq 0$
-                \item $A \perp B \iff A^C \perp B \iff A \perp B^C \iff A^C \perp B^C$
+                \item Conditional Probability:\\
+                    $P(B|A) = \frac {P(A \cap B)}{P(A)}$ for $P(A) \neq 0$
+                \item A and B are independent($A \perp B$) iff:\\
+                    $P(A \cap B) = P(A)P(B)$\\
+                    $P(A|B) = P(A)$ for $P(A) \neq 0$\\
+                    $P(B|A) = P(B)$ for $P(B) \neq 0$\\
+                    $A \perp B \iff A^C \perp B \iff A \perp B^C \iff A^C \perp B^C$
                 \item A and B are mutually exclusive iff $P(A \cap B) = \Phi$
             \end{itemize}
         \item Expectation
             \begin{itemize}
-                \item Definition: $E(X) = \sum_{k \in Z}{P(X=k)k}$
-                \item linearity of expected value:
-                \item $E(X + Y) = E(X) + E(Y)$
-                \item $E(cX) = cE(X)$
+                \item Definition: \\
+                    $E(X) = \sum_{k \in Z}{P(X=k)k}$
+                \item linearity of expected value:\\
+                    $E(X + Y) = E(X) + E(Y)$\\
+                    $E(cX) = cE(X)$
                 \item Standard deviation: $\varrho$
-                \item variance: $\varrho^2$
-                \item $\varrho^2 = E((X - E(X))^2) = E(X^2) - E(X)^2$                
+                \item variance: $\varrho^2\\
+                    = E((X - E(X))^2)\\
+                    = E(X^2) - E(X)^2$                
             \end{itemize}
     \end{enumerate}
 
 
-% \end{multicols}
+\end{multicols}
 \end{document}
