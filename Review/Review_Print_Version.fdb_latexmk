@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1509602687 "/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex" "Review_Print_Version.pdf" "Review_Print_Version" 1509602700
+["pdflatex"] 1509602687 "/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex" "Review_Print_Version.pdf" "Review_Print_Version" 1509602939
   "/etc/texmf/web2c/texmf.cnf" 1508937200 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/z5129432/Github/COMP9020_LaTex/Review/Review_Print_Version.tex" 1509602687 18877 46d0e9768ffc3500f3e5d7911d912075 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -100,7 +100,7 @@
   "Review_Print_Version.out" 1509602687 0 d41d8cd98f00b204e9800998ecf8427e ""
   "Review_Print_Version.tex" 1509602687 18877 46d0e9768ffc3500f3e5d7911d912075 ""
   (generated)
-  "Review_Print_Version.log"
-  "Review_Print_Version.aux"
-  "Review_Print_Version.out"
   "Review_Print_Version.pdf"
+  "Review_Print_Version.log"
+  "Review_Print_Version.out"
+  "Review_Print_Version.aux"
